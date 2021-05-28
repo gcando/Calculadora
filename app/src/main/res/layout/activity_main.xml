@@ -8,7 +8,17 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Calculadora"
+        android:gravity="center"></TextView>
+
     <EditText
+        android:id="@+id/numero1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -18,12 +28,14 @@
     </EditText>
 
     <Spinner
+        android:id="@+id/spoperacion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         ></Spinner>
 
     <EditText
+        android:id="@+id/numero2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -31,5 +43,20 @@
         android:hint="Segundo Numero"
         >
     </EditText>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Resultado"
+        android:gravity="center"></TextView>
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Calcular"></Button>
 
 </LinearLayout>
