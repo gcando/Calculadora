@@ -31,5 +31,5 @@
         android:hint="Segundo Numero"
         >
     </EditText>
-    
+
 </LinearLayout>
