@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Raiz", Toast.LENGTH_LONG).show();
                         num1 = Integer.valueOf(numero1.getText().toString());
                         double x = 1.0;
+                        
                         int k;
+
                         for(k = 1; k < 10; k++){
                             x = (x + num1/x) / 2;
                         }
