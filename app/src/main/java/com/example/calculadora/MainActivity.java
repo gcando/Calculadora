@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     Button boton;
     Spinner operaciones;
 
+    Integer num1;
+    Integer num2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,18 +56,32 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         // Declaraciones
                         Toast.makeText(MainActivity.this, "Suma", Toast.LENGTH_LONG).show();
+                        num1 = Integer.valueOf(numero1.getText().toString());
+                        num2 = Integer.valueOf(numero2.getText().toString());
+                        resultado.setText(String.valueOf(num1+num2));
+
                         break; // break es opcional
                     case 1:
                         // Declaraciones
                         Toast.makeText(MainActivity.this, "Resta", Toast.LENGTH_LONG).show();
+                        num1 = Integer.valueOf(numero1.getText().toString());
+                        num2 = Integer.valueOf(numero2.getText().toString());
+                        resultado.setText(String.valueOf(num1-num2));
+
                         break; // break es opcional
                     case 2:
                         // Declaraciones
                         Toast.makeText(MainActivity.this, "Multiplicacion", Toast.LENGTH_LONG).show();
+                        num1 = Integer.valueOf(numero1.getText().toString());
+                        num2 = Integer.valueOf(numero2.getText().toString());
+                        resultado.setText(String.valueOf(num1*num2));
                         break; // break es opcional
                     case 3:
                         // Declaraciones
                         Toast.makeText(MainActivity.this, "Divicion", Toast.LENGTH_LONG).show();
+                        num1 = Integer.valueOf(numero1.getText().toString());
+                        num2 = Integer.valueOf(numero2.getText().toString());
+                        resultado.setText(String.valueOf(num1/num2));
                         break; // break es opcional
                     case 4:
                         // Declaraciones

@@ -23,6 +23,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
+        android:inputType="number"
         android:hint="Primer Numero"
         >
     </EditText>
@@ -38,6 +39,7 @@
         android:id="@+id/numero2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:inputType="number"
         android:layout_weight="1"
         android:gravity="center"
         android:hint="Segundo Numero"
